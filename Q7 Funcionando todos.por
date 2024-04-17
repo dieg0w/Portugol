@@ -7,7 +7,7 @@ programa {
   inteiro digito
   real temperaturaInicial, temperaturafinal
   funcao converter(){
-    escreva("Bem vindo ao Sistema, qual conversão deseja fazer?\n")
+    escreva("Bem vindo ao Sistema, qual conversÃ£o deseja fazer?\n")
     escreva("Digite 1 para: Celsius para Fahrenheit\n")
     escreva("Digite 2 para: Fahrenheit para Celsius\n")
     escreva("Digite 3 para: Celsius para Kelvin\n")
@@ -19,13 +19,13 @@ programa {
       escreva("Celsius para Fahrenheit. Digite a temperatura em Celsius!\n")
       leia(temperaturaInicial)
       temperaturafinal = temperaturaInicial * 9/5 + 32
-      escreva("Resultado: "+temperaturafinal+"ºF")
+      escreva("Resultado: "+temperaturafinal+"ÂºF")
     }
     senao se(digito == 2){
       escreva("Fahrenheit para Celsius. Digite a temperatura em Fahrenheit!\n")
       leia(temperaturaInicial)
       temperaturafinal = (temperaturaInicial-32) * 5/9
-      escreva("Resultado: "+temperaturafinal+"ºC")
+      escreva("Resultado: "+temperaturafinal+"ÂºC")
     }
      senao se(digito == 3){
       escreva("Celsius para Kelvin. Digite a temperatura em Celsius!\n")
@@ -37,7 +37,7 @@ programa {
       escreva("Kelvin para Celsius. Digite a temperatura em Kelvin!\n")
       leia(temperaturaInicial)
       temperaturafinal = temperaturaInicial - 273.15
-      escreva("Resultado: "+temperaturafinal+"ºC")
+      escreva("Resultado: "+temperaturafinal+"ÂºC")
     }
     senao se(digito == 5){
       escreva("Fahrenheit para Kelvin. Digite a temperatura em Kelvin!\n")
@@ -49,7 +49,10 @@ programa {
       escreva("Kelvin para Fahrenheit. Digite a temperatura em Kelvin!\n")
       leia(temperaturaInicial)
       temperaturafinal = (temperaturaInicial - 273.15) * 9/5 + 32
-      escreva("Resultado: "+temperaturafinal+"ºF")
+      escreva("Resultado: "+temperaturafinal+"ÂºF")
     }
+    senao{
+      escreva("Digite um valor vÃ¡lido, mazanza!\n")
+      converter()
   }
 }
