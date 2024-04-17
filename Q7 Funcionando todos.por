@@ -54,5 +54,6 @@ programa {
     senao{
       escreva("Digite um valor válido, mazanza!\n")
       converter()
+    }
   }
 }
